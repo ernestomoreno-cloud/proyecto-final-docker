@@ -1,0 +1,7 @@
+mkdir -p proyecto-final/entrada proyecto-final/proceso proyecto-final/salida
+wget -O libro-a.txt ...
+cp entrada/libro-a.txt proceso/
+mv proceso/libro-a.txt proceso/fuente-principal.txt
+head -n 50 proceso/fuente-principal.txt > salida/resumen.txt
+tail -n 20 entrada/libro-b.txt >> salida/resumen.txt
+mv salida/resumen.txt ~/entrega-final.txt
